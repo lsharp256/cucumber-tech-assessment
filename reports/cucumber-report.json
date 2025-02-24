@@ -1,5 +1,93 @@
 [
   {
+    "description": "    As a user\n    I want to be able to see the top 3 finishers of the 2023 Las Vegas Grand Prix",
+    "elements": [
+      {
+        "description": "",
+        "id": "validation-in-a-table-of-results;report-the-top-3-finishers-of-the-2023-las-vegas-grand-prix",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Report the top 3 finishers of the 2023 Las Vegas Grand Prix",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the BBC Sport page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\tableResults.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2619110700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I navigate to the results table",
+            "match": {
+              "location": "src\\tests\\step-definitions\\tableResults.ts:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5002822000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Leroy\\Documents\\Github\\cucumber-tech-assessment\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see \"Max Verstappen\" in the results",
+            "match": {
+              "location": "src\\tests\\step-definitions\\tableResults.ts:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I should see \"Charles Leclerc\" in the results",
+            "match": {
+              "location": "src\\tests\\step-definitions\\tableResults.ts:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I should see \"Sergio Perez\" in the results",
+            "match": {
+              "location": "src\\tests\\step-definitions\\tableResults.ts:25"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "validation-in-a-table-of-results",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Validation In A Table Of Results",
+    "tags": [],
+    "uri": "src\\tests\\features\\TableResults.feature"
+  },
+  {
     "description": "    Feature Login page will work depending on the user credentials.",
     "elements": [
       {
@@ -19,7 +107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1032475199
+              "duration": 1120526900
             }
           },
           {
@@ -32,7 +120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 198936799
+              "duration": 236846299
             }
           },
           {
@@ -45,7 +133,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 92309600
+              "duration": 81132600
             }
           }
         ],
@@ -59,87 +147,5 @@
     "name": "Login",
     "tags": [],
     "uri": "src\\tests\\features\\login.feature"
-  },
-  {
-    "description": "    As a user\n    I want to be able to see the top 3 finishers of the 2023 Las Vegas Grand Prix",
-    "elements": [
-      {
-        "description": "",
-        "id": "validation-in-a-table-of-results;report-the-top-3-finishers-of-the-2023-las-vegas-grand-prix",
-        "keyword": "Scenario",
-        "line": 5,
-        "name": "Report the top 3 finishers of the 2023 Las Vegas Grand Prix",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 6,
-            "name": "I am on the BBC Sport page",
-            "match": {
-              "location": "src\\tests\\step-definitions\\feature1.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 595415300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "I navigate to the results table",
-            "match": {
-              "location": "src\\tests\\step-definitions\\feature1.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3804957500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "I should see \"Max Verstappen\" in the results",
-            "match": {
-              "location": "src\\tests\\step-definitions\\feature1.ts:21"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5005637699,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Leroy\\Documents\\Github\\cucumber-tech-assessment\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I should see \"George Russell\" in the results",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I should see \"Sergio Perez\" in the results",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "validation-in-a-table-of-results",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Validation In A Table Of Results",
-    "tags": [],
-    "uri": "src\\tests\\features\\scenario1.feature"
   }
 ]

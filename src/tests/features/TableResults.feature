@@ -6,5 +6,5 @@ Feature: Validation In A Table Of Results
         Given I am on the BBC Sport page
         When I navigate to the results table
         Then I should see "Max Verstappen" in the results
-        And I should see "George Russell" in the results
+        And I should see "Charles Leclerc" in the results
         And I should see "Sergio Perez" in the results
