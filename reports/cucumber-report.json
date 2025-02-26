@@ -1,5 +1,111 @@
 [
   {
+    "description": "",
+    "elements": [
+      {
+        "description": "    Title: As an editor, I want to ensure that whenever someone searches for \"Sport in 2023,\" at least 4 relevant results are returned, so that users can access diverse and informative content.\n    As an editor\n    I want the search functionality to return at least 4 relevant results whenever someone searches for \"Sport in 2023\"\n    So that users have a wide range of articles, reports, and media to explore on the topic.",
+        "id": "search-functionality-on-bbc-sport;retrieve-search-results",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Retrieve Search Results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 619633800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 668424299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am on the BBC Sport search page",
+            "match": {
+              "location": "src\\tests\\step-definitions\\search.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1961670900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I search for \"Sport in 2023\"",
+            "match": {
+              "location": "src\\tests\\step-definitions\\search.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 613603699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see at least 4 search results",
+            "match": {
+              "location": "src\\tests\\step-definitions\\search.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 243850399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the search results should be relevant to the \"Sport in 2023\" search term",
+            "match": {
+              "location": "src\\tests\\step-definitions\\search.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47199599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 533584700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 653068900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-functionality-on-bbc-sport",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Search Functionality on BBC Sport",
+    "tags": [],
+    "uri": "src\\tests\\features\\Search.feature"
+  },
+  {
     "description": "    As a user\n    I want to be able to see the top 3 finishers of the 2023 Las Vegas Grand Prix",
     "elements": [
       {
@@ -10,16 +116,32 @@
         "name": "Report the top 3 finishers of the 2023 Las Vegas Grand Prix",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 654788400
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 712130900
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 6,
             "name": "I am on the BBC Sport page",
             "match": {
-              "location": "src\\tests\\step-definitions\\tableResults.ts:7"
+              "location": "src\\tests\\step-definitions\\tableResults.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 2619110700
+              "duration": 2070652399
             }
           },
           {
@@ -28,51 +150,60 @@
             "line": 7,
             "name": "I navigate to the results table",
             "match": {
-              "location": "src\\tests\\step-definitions\\tableResults.ts:15"
+              "location": "src\\tests\\step-definitions\\tableResults.ts:26"
             },
             "result": {
-              "status": "failed",
-              "duration": 5002822000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Leroy\\Documents\\Github\\cucumber-tech-assessment\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+              "status": "passed",
+              "duration": 4152191399
             }
           },
           {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Max Verstappen"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Charles Leclerc"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Sergio Perez"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "Then ",
             "line": 8,
-            "name": "I should see \"Max Verstappen\" in the results",
+            "name": "I should see the following drivers in the results:",
             "match": {
-              "location": "src\\tests\\step-definitions\\tableResults.ts:25"
+              "location": "src\\tests\\step-definitions\\tableResults.ts:35"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 445040300
             }
           },
           {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I should see \"Charles Leclerc\" in the results",
-            "match": {
-              "location": "src\\tests\\step-definitions\\tableResults.ts:25"
-            },
+            "keyword": "After",
+            "hidden": true,
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 400053899
             }
           },
           {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I should see \"Sergio Perez\" in the results",
-            "match": {
-              "location": "src\\tests\\step-definitions\\tableResults.ts:25"
-            },
+            "keyword": "After",
+            "hidden": true,
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 384915699
             }
           }
         ],
@@ -98,6 +229,22 @@
         "name": "Sucess Login",
         "steps": [
           {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 663149800
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 651242900
+            }
+          },
+          {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
@@ -107,7 +254,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1120526900
+              "duration": 1191333099
             }
           },
           {
@@ -120,7 +267,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 236846299
+              "duration": 131873900
             }
           },
           {
@@ -133,7 +280,23 @@
             },
             "result": {
               "status": "passed",
-              "duration": 81132600
+              "duration": 81964599
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 423137500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 435525399
             }
           }
         ],
